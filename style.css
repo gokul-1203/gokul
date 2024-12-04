@@ -626,3 +626,118 @@ a:hover {
 .github-btn:hover {
   background-color: #D3D3D3;
 }
+
+/* Default styles (already in your code) will apply to larger screens */
+
+/* Mobile view (less than 768px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .about-section,
+  .welcome-section,
+  .experience-section,
+  .education-section,
+  .skills-section,
+  .projects-section,
+  .certification-section,
+  .responsibility-section,
+  .contact-section {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .skills-content ul {
+    margin-left: 10px; /* Reduce indentation for lists */
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 20px; /* Increase spacing between social buttons */
+  }
+
+  .social-btn {
+    width: 100%; /* Make buttons full-width */
+  }
+}
+
+/* Tablet view (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem; /* Slightly larger font for tablets */
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 20px; /* Maintain spacing for nav items */
+  }
+
+  .about-section,
+  .welcome-section,
+  .experience-section,
+  .education-section,
+  .skills-section,
+  .projects-section,
+  .certification-section,
+  .responsibility-section,
+  .contact-section {
+    padding: 40px 20px; /* Medium padding for tablets */
+  }
+
+  .skills-content ul {
+    margin-left: 15px; /* Moderate indentation for lists */
+  }
+
+  .social-links {
+    flex-direction: row;
+    gap: 30px; /* Adjust spacing for horizontal layout */
+  }
+
+  .social-btn {
+    width: auto; /* Restore auto width for buttons */
+  }
+}
+
+/* Laptop/Desktop view (above 1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.1rem; /* Larger font size for desktops */
+  }
+
+  .about-section,
+  .welcome-section,
+  .experience-section,
+  .education-section,
+  .skills-section,
+  .projects-section,
+  .certification-section,
+  .responsibility-section,
+  .contact-section {
+    padding: 50px 40px; /* More padding for larger screens */
+  }
+
+  .skills-content ul {
+    margin-left: 20px; /* Standard indentation for lists */
+  }
+
+  .social-links {
+    flex-direction: row;
+    gap: 50px; /* Ample spacing for horizontal layout */
+  }
+}
