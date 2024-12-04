@@ -1,0 +1,628 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff; /* White color for links */
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+  color: #fff; /* Ensure links stay white on hover, focus, and active states */
+  text-decoration: underline; /* Underline effect for hover */
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section .about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-section .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Button Style */
+.about-section .btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.about-section .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.welcome-section .welcome-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.welcome-section .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.welcome-section .btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.welcome-section .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Experience Section */
+.experience-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.experience-section .experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  font-size: 1.8rem;
+  color: #333; /* Keep black color for topic titles */
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-item strong {
+  color: #333;
+}
+
+/* Spacing between PDF and Image links */
+.pdf-link, .image-link {
+  display: inline-block;
+  margin-right: 20px; /* Space between the links */
+  margin-top: 10px; /* Optional: Space above the links */
+}
+
+/* Blue color for PDF and Image links */
+.pdf-link, .image-link {
+  color: #007bff; /* Blue color for links */
+}
+
+.pdf-link:hover, .image-link:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #007bff; /* Blue color */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button Style for "About My Educational Details" */
+.experience-section .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff; /* Blue background for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Font size for readability */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover and transform effects */
+}
+
+.experience-section .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+/* Education Section */
+.education-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.education-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 1.8rem;
+  color: #333; /* Black color for headings */
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #007bff; /* Blue color */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button Style for "Explore My Skills" */
+.education-section .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff; /* Blue background for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Font size for readability */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover and transform effects */
+}
+
+.education-section .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.skills-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills-content h3 {
+  font-size: 1.8rem;
+  color: #4a4848;
+  margin-bottom: 10px;
+}
+
+.skills-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-content ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.skills-content ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.skills-content ul ul li {
+  margin-bottom: 5px;
+}
+
+/* Individual Skill Items */
+.skill-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ebe8e8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Center Button */
+.explore-projects {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Button Style for "About My Projects" */
+.skills-section .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff; /* Blue background for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem; /* Font size for readability */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover and transform effects */
+}
+
+.skills-section .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Project Section Styling */
+.projects-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-item {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.project-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Button Styling for Explore More */
+.explore-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.explore-more .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-more .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Certification Section Styling */
+.certification-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.certification-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.certification-item {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.certification-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.certification-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsibility Section Styling */
+.responsibility-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.responsibility-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.responsibility-item {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.responsibility-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.responsibility-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Coursework Styling */
+.coursework-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.coursework-list li {
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 80px 40px;
+  background-color: #e6e7e8;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the contact section vertically and horizontally */
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #2980b9;
+  margin-bottom: 25px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #1f618d;
+  text-decoration: underline;
+}
+
+/* Social Links Styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf0f5;
+  color: white; /* Set text color to white */
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #bdc3c7;
+  transform: translateY(-2px);
+}
+
+.social-btn .social-icon {
+  width: 18px; /* Smaller icon size */
+  height: 18px;
+  margin-right: 10px;
+}
+
+.social-btn span {
+  font-size: 1.2rem; /* Increase the text size */
+}
+
+/* LinkedIn and GitHub button styles */
+.linkedin-btn {
+  background-color: #ffffff;
+}
+
+.linkedin-btn:hover {
+  background-color: #ADD8E6;
+}
+
+.github-btn {
+  background-color: #ffffff;
+}
+
+.github-btn:hover {
+  background-color: #D3D3D3;
+}
